@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 
 
 st.set_page_config(page_title='Our Data Science Project', page_icon='🍁', layout='wide')
@@ -28,7 +29,7 @@ h1 {
 
 
 with st.container():
-    st.subheader('**Hi Everyone! **')
+    st.subheader('**Hi Everyone!**')
     st.title('**Project League of Legends**')
     st.write('**Our trained model will help you predict the outcome**')
 
@@ -55,4 +56,9 @@ with st.container():
 
     with right_column:
         #st.image('https://giffiles.alphacoders.com/527/52742.gif', width = 500)
-        st.image('https://giffiles.alphacoders.com/527/52704.gif', width = 500)
+        st.image('https://cdna.artstation.com/p/assets/images/images/045/824/282/original/jan-turkiewicz-zeri-animtaion.gif', width = 500)
+
+
+number = st.number_input('Insert a number')
+
+st.write('The current number is ', number)
