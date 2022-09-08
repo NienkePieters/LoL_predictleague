@@ -1,12 +1,11 @@
 import streamlit as st
 from PIL import Image
-from predictleague.ml_logic import data, preprocessor
-from predictleague.api import fast
-#from predictleague.interface import main
+# from predictleague.ml_logic import data, preprocessor
+# from predictleague.api import fast
+# from predictleague.interface import main
 #from tensorflow.keras.models import load_model
 #from predictleague.ml_logic.preprocessor import preprocess_input_data
 from predictleague.api.fast import predict
-
 
 
 
@@ -30,16 +29,19 @@ h1 {
 }
 .stApp {
     #background-image: url(https://cdn.vox-cdn.com/uploads/chorus_asset/file/22991847/Sisters4.JPG);
-    background-image: url(https://cdna.artstation.com/p/assets/images/images/015/608/430/large/artur-sadlos-leg-duo-sh030-background-as-v002.jpg);
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/015/609/184/large/mathias-zamecki-1.jpg?1548953774);
     background-size: cover;
 }
 """
 
+#if st.checkbox('click me', True):
+st.write(f'<style>{CSS}</style>', unsafe_allow_html=True)
+
 
 with st.container():
     st.subheader('**Hi Everyone!**')
-    st.title('**Project League of Legends**')
-    st.write('**Our trained model will help you predict the outcome**')
+    st.title('**Project Head-hunting for League of Legends teams**')
+    st.write('**Our trained model will help you predict if you can actually become a pro**')
 
 
 
@@ -66,9 +68,9 @@ with st.container():
         #st.image('https://giffiles.alphacoders.com/527/52742.gif', width = 500)
         st.image('https://cdna.artstation.com/p/assets/images/images/045/824/282/original/jan-turkiewicz-zeri-animtaion.gif', width = 500)
 
+st.markdown(f'<h1 style="color:##FF0000	;font-size:24px;">{"Please insert your last matches result"}</h1>', unsafe_allow_html=True)
 
-matches = st.text_input('Last matches played, Please put only 1 for lost and 0 for won', '')
+x = st.text_input(" Please put 1 for won and 0 for lost match ")
 
 
-
-st.write('your result is', predict(matches))
+st.write("**Can you be a major league player** ?    ",   predict(x))
