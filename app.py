@@ -1,5 +1,13 @@
 import streamlit as st
 from PIL import Image
+from predictleague.ml_logic import data, preprocessor
+from predictleague.api import fast
+#from predictleague.interface import main
+#from tensorflow.keras.models import load_model
+#from predictleague.ml_logic.preprocessor import preprocess_input_data
+from predictleague.api.fast import predict
+
+
 
 
 st.set_page_config(page_title='Our Data Science Project', page_icon='🍁', layout='wide')
@@ -59,6 +67,8 @@ with st.container():
         st.image('https://cdna.artstation.com/p/assets/images/images/045/824/282/original/jan-turkiewicz-zeri-animtaion.gif', width = 500)
 
 
-number = st.number_input('Insert a number')
+matches = st.text_input('Last matches played, Please put only 1 for lost and 0 for won', '')
 
-st.write('The current number is ', number)
+
+
+st.write('your result is', predict(matches))
