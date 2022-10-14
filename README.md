@@ -71,4 +71,3 @@ mkdir tmp
 cd tmp
 predictleague-run
 ```
-# LoL_predictleague
