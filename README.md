@@ -1,10 +1,7 @@
-# Data analysis
-- Document here the project: predictleague
-- Description: Project Description
-- Data Source:
-- Type of analysis:
-
-Please document the project the better you can.
+# LOL_predictleague
+- Description: A tool for early identification of promising e-sports players (League of Legends), consisting of a Deep Learning model (Recurrent Neural Network) and Streamlit as front-end.
+- Data Source: https://oracleselixir.com/
+- Type: RNN model
 
 # Startup the project
 
