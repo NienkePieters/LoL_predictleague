@@ -9,15 +9,6 @@ git push -u origin master
 git push -u origin --tags
 ```
 
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-predictleague-run
-```
-
 # Install
 
 Go to `https://github.com/NienkePieters/LOL_predictleague` to see the project, manage issues,
