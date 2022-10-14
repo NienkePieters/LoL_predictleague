@@ -1,5 +1,5 @@
 # LOL_predictleague
-- Description: A tool for early identification of promising e-sports players (League of Legends), consisting of a Deep Learning model (Recurrent Neural Network) and Streamlit as front-end.
+- Description: This project was created as a final project of the Le Wagon project. It is a tool for early identification of promising e-sports players (League of Legends), consisting of a Deep Learning model (Recurrent Neural Network) and Streamlit as front-end.
 - Data Source: https://oracleselixir.com/
 - Type: RNN model
 
