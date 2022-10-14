@@ -3,30 +3,8 @@
 - Data Source: https://oracleselixir.com/
 - Type: RNN model
 
-# Startup the project
-
-The initial setup.
-
-Create virtualenv and install the project:
 ```bash
-sudo apt-get install virtualenv python-pip python-dev
-deactivate; virtualenv ~/venv ; source ~/venv/bin/activate ;\
-    pip install pip -U; pip install -r requirements.txt
-```
-
-Unittest test:
-```bash
-make clean install test
-```
-
-Check for predictleague in github.com/{group}. If your project is not set please add it:
-
-Create a new project on github.com/{group}/predictleague
-Then populate it:
-
-```bash
-##   e.g. if group is "{group}" and project_name is "predictleague"
-git remote add origin git@github.com:{group}/predictleague.git
+git remote add origin git@github.com:NienkePieters/LOL_predictleague.git
 git push -u origin master
 git push -u origin --tags
 ```
@@ -42,8 +20,8 @@ predictleague-run
 
 # Install
 
-Go to `https://github.com/{group}/predictleague` to see the project, manage issues,
-setup you ssh public key, ...
+Go to `https://github.com/NienkePieters/LOL_predictleague` to see the project, manage issues,
+setup your ssh public key, ...
 
 Create a python3 virtualenv and activate it:
 
