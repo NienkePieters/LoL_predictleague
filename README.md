@@ -58,8 +58,8 @@ deactivate; virtualenv -ppython3 ~/venv ; source ~/venv/bin/activate
 Clone the project and install it:
 
 ```bash
-git clone git@github.com:{group}/predictleague.git
-cd predictleague
+git clone git@github.com:NienkePieters/LOL_predictleague.git
+cd LOL_predictleague
 pip install -r requirements.txt
 make clean install test                # install and test
 ```
