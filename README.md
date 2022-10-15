@@ -29,11 +29,3 @@ cd LOL_predictleague
 pip install -r requirements.txt
 make clean install test                # install and test
 ```
-Functionnal test with a script:
-
-```bash
-cd
-mkdir tmp
-cd tmp
-predictleague-run
-```
